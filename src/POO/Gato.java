@@ -1,6 +1,6 @@
 package POO;
 
-public class Gato extends Animal{
+public class Gato extends Animal implements Carnivoro{
     String nome;
     String raca;
     int peso;
@@ -36,5 +36,15 @@ public class Gato extends Animal{
     @Override
     public String toString() {
         return "Olá! meu nome é " + this.nome + "e sou de pelagem " + this.raca;
+    }
+
+    @Override
+    public void comerCarne() {
+        System.out.println("Comendo Petiscos de carne");
+    }
+
+    @Override
+    public void cacarPresa() {
+        System.out.println("Procurando alvo");
     }
 }
