@@ -1,4 +1,4 @@
-package Arrays;
+package Estruturas.Arrays;
 
 import java.util.ArrayList;
 
