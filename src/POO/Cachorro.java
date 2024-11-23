@@ -1,6 +1,6 @@
 package POO;
 
-public class Cachorro extends Animal implements Carnivoro{
+public class Cachorro extends Animal implements Carnivoro {
     String nome;
     String raca;
     int peso;
@@ -12,9 +12,28 @@ public class Cachorro extends Animal implements Carnivoro{
         this.raca = raca;
     }
 
+    //Métodos vindos da Classe Abstrata Animal
     @Override
     public void gerarSom() {
         System.out.println("Wan Wan");
+    }
+
+    //Métodos vindos da Interface Carnivoro
+    @Override
+    public void comerCarne() {
+        System.out.println("Comendo Carne");
+    }
+
+    @Override
+    public void cacarPresa() {
+        System.out.println("Procurando");
+    }
+
+
+    //Encapsulamento
+    @Override
+    public String toString() {
+        return "Olá! meu nome é " + this.nome + "e sou da raça " + this.raca;
     }
 
     public String getNome() {
@@ -31,20 +50,5 @@ public class Cachorro extends Animal implements Carnivoro{
 
     public void setPeso(int peso) {
         this.peso = peso;
-    }
-
-    @Override
-    public String toString() {
-        return "Olá! meu nome é " + this.nome + "e sou da raça " + this.raca;
-    }
-
-    @Override
-    public void comerCarne() {
-        System.out.println("Comendo Carne");
-    }
-
-    @Override
-    public void cacarPresa() {
-        System.out.println("Procurando");
     }
 }
