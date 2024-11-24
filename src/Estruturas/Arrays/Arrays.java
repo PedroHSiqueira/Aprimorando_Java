@@ -13,7 +13,7 @@ public class Arrays {
             System.out.println("Array de nomes: " + nome);
         }
 
-        // 2 forma - Sem ter que definir um tamanha inicial
+        // 2 forma - Sem ter que definir um tamanho inicial
         ArrayList<String> carros = new ArrayList<>();
         carros.add("Toyota");
         carros.add("Nissan");
