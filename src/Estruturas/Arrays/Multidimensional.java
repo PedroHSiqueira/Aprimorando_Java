@@ -22,11 +22,25 @@ public class Multidimensional {
         System.out.println(numeros[0][1]);
         System.out.println(numeros[1][2]);
 
-        System.out.println("=========================================");
+        System.out.println("\n=========================================");
 
         //usando o ForEach para exibir os dados
         for(int [] arrayNum : numeros){
             for (int num : arrayNum){
+                System.out.println(num);
+            }
+        }
+
+        System.out.println("\n=========================================");
+        byte[][] arrayBytes = new byte[3][];
+        byte[] bytes = {8,10,12};
+
+        arrayBytes[0] = new byte[2];
+        arrayBytes[1] = new byte[]{2,4,5,6};
+        arrayBytes[2] = bytes;
+
+        for(byte[] arrayBase : arrayBytes){
+            for (byte num : arrayBase){
                 System.out.println(num);
             }
         }
