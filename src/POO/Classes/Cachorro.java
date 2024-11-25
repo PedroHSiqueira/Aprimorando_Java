@@ -1,9 +1,11 @@
-package POO;
+package POO.Classes;
+
+import POO.Interfaces.Carnivoro;
 
 public class Cachorro extends Animal implements Carnivoro {
-    String nome;
-    String raca;
-    int peso;
+    private String nome;
+    private String raca;
+    private int peso;
 
     public Cachorro(char genero, int idade, String nome, int peso, String raca) {
         super(genero, idade);

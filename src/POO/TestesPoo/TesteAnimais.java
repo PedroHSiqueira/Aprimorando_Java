@@ -1,7 +1,9 @@
+package POO.TestesPoo;
+
 import POO.Classes.Cachorro;
 import POO.Classes.Gato;
 
-public class Main {
+public class TesteAnimais {
     public static void main(String[] args) {
 //        Exemplo de herança com classes abstratas
         Cachorro cachorro1 = new Cachorro('F', 4, "Luma", 35, "Pitbull");

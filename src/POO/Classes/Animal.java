@@ -1,8 +1,8 @@
-package POO;
+package POO.Classes;
 
 public abstract class Animal {
-    char genero;
-    int idade;
+    protected char genero;
+    protected int idade;
 
     public Animal(char genero, int idade) {
         this.genero = genero;
