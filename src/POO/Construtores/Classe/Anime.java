@@ -5,6 +5,7 @@ public class Anime {
     private String tipo;
     private int episodios;
     private String genero;
+    private String studio;
 
     //Iniciando um Contrutor / Nome igual ao da classe
     public Anime(String nome, String tipo, int episodios, String genero){
@@ -15,8 +16,9 @@ public class Anime {
     }
 
     //Sobrecarga de Construtores
-    public Anime(){
-
+    public Anime(String nome, String tipo, int episodios, String genero, String studio){
+        this(nome, tipo, episodios, genero);
+        this.studio = studio;
     }
 
     @Override
@@ -47,4 +49,12 @@ public class Anime {
     public void setEpisodios(int episodios) {
         this.episodios = episodios;
     }
+
+    public String getGenero() {return genero;}
+
+    public void setGenero(String genero) {this.genero = genero;}
+
+    public String getStudio() {return studio;}
+
+    public void setStudio(String studio) {this.studio = studio;}
 }
