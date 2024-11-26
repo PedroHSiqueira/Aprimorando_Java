@@ -1,13 +1,13 @@
-package POO.Classes;
+package POO.Classe.Classes;
 
 import POO.Interfaces.Carnivoro;
 
-public class Gato extends Animal implements Carnivoro {
+public class Cachorro extends Animal implements Carnivoro {
     private String nome;
     private String raca;
     private int peso;
 
-    public Gato(char genero, int idade, String nome, int peso, String raca) {
+    public Cachorro(char genero, int idade, String nome, int peso, String raca) {
         super(genero, idade);
         this.nome = nome;
         this.peso = peso;
@@ -17,21 +17,27 @@ public class Gato extends Animal implements Carnivoro {
     //Métodos vindos da Classe Abstrata Animal
     @Override
     public void gerarSom() {
-        System.out.println("Meow meow");
+        System.out.println("Wan Wan");
     }
 
     //Métodos vindos da Interface Carnivoro
     @Override
     public void comerCarne() {
-        System.out.println("Comendo Petiscos de carne");
+        System.out.println("Comendo Carne");
     }
 
     @Override
     public void cacarPresa() {
-        System.out.println("Procurando alvo");
+        System.out.println("Procurando");
     }
 
+
     //Encapsulamento
+    @Override
+    public String toString() {
+        return "Olá! meu nome é " + this.nome + "e sou da raça " + this.raca;
+    }
+
     public String getNome() {
         return nome;
     }
@@ -46,10 +52,5 @@ public class Gato extends Animal implements Carnivoro {
 
     public void setPeso(int peso) {
         this.peso = peso;
-    }
-
-    @Override
-    public String toString() {
-        return "Olá! meu nome é " + this.nome + "e sou de pelagem " + this.raca;
     }
 }

@@ -1,6 +1,6 @@
-package POO.TestesPoo;
+package POO.Classe.Testes;
 
-import POO.Classes.Calculadora;
+import POO.Classe.Classes.Calculadora;
 
 public class TesteCalculadora {
     public static void main(String[] args) {

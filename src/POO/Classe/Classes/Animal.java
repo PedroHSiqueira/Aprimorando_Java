@@ -1,4 +1,4 @@
-package POO.Classes;
+package POO.Classe.Classes;
 
 public abstract class Animal {
     protected char genero;

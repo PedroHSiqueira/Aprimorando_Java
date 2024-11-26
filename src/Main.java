@@ -1,5 +1,5 @@
-import POO.Classes.Cachorro;
-import POO.Classes.Gato;
+import POO.Classe.Classes.Cachorro;
+import POO.Classe.Classes.Gato;
 
 public class Main {
     public static void main(String[] args) {

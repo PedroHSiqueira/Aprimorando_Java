@@ -1,7 +1,7 @@
-package POO.TestesPoo;
+package POO.Classe.Testes;
 
-import POO.Classes.Cachorro;
-import POO.Classes.Gato;
+import POO.Classe.Classes.Cachorro;
+import POO.Classe.Classes.Gato;
 
 public class TesteAnimais {
     public static void main(String[] args) {
