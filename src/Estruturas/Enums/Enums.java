@@ -6,5 +6,9 @@ public class Enums {
         Dias primeiroDia = Dias.DOMINGO;
 
         System.out.println(primeiroDia);
+
+        for(Dias meusDias: Dias.values()){
+            System.out.println(meusDias);
+        }
     }
 }
